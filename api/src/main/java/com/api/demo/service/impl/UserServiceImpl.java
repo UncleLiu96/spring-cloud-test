@@ -3,7 +3,7 @@ package com.api.demo.service.impl;
 import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.api.demo.feign.ApiFeign;
-import com.api.demo.pojo.User;
+import com.common.pojo.User;
 import com.api.demo.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

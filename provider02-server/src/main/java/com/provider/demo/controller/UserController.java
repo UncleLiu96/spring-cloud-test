@@ -1,6 +1,6 @@
 package com.provider.demo.controller;
 
-import com.provider.demo.pojo.User;
+import com.common.pojo.User;
 import com.provider.demo.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

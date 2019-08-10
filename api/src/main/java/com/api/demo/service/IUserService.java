@@ -1,6 +1,6 @@
 package com.api.demo.service;
 
-import com.api.demo.pojo.User;
+import com.common.pojo.User;
 
 
 public interface IUserService {

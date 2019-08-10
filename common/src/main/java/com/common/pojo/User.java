@@ -1,4 +1,4 @@
-package com.provider.demo.pojo;
+package com.common.pojo;
 
 public class User {
     private int uId;

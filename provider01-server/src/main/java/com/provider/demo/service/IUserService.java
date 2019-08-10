@@ -1,6 +1,6 @@
 package com.provider.demo.service;
 
-import com.provider.demo.pojo.User;
+import com.common.pojo.User;
 
 import java.util.List;
 

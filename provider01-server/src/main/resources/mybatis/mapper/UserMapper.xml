@@ -2,16 +2,16 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.provider.demo.mapper.UserMapper">
-    <resultMap id="user" type="com.provider.demo.pojo.User">
+    <resultMap id="user" type="com.common.pojo.User">
         <id column="u_id" property="uId" />
         <result column="u_name" property="uName"/>
     </resultMap>
 
-    <insert id="insertUser" parameterType="com.provider.demo.pojo.User" >
+    <insert id="insertUser" parameterType="com.common.pojo.User" >
         insert into t_user(u_name) values(#{uName})
     </insert>
 
-    <select id="selectList" parameterType="com.provider.demo.pojo.User" resultMap="user">
+    <select id="selectList" parameterType="com.common.pojo.User" resultMap="user">
         select u_id,u_name from t_user
         <where>
             <if test="uId!=null">and u_id = #{uId}</if>
@@ -19,7 +19,7 @@
         </where>
     </select>
 
-    <update id="updateUser" parameterType="com.provider.demo.pojo.User">
+    <update id="updateUser" parameterType="com.common.pojo.User">
         update t_user set u_name = #{uName} where u_id = #{uId}
     </update>
 

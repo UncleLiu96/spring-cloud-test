@@ -1,6 +1,6 @@
 package com.api.demo.feign;
 
-import com.api.demo.pojo.User;
+import com.common.pojo.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

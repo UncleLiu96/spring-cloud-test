@@ -23,4 +23,4 @@ eureka:
   server:
     # 默认是true，调整为false，关闭eureka的自我保护
     enable-self-preservation: false
-    eviction-interval-timer-in-ms: 3000 #毫秒
+    eviction-interval-timer-in-ms: 1000 #毫秒
