@@ -14,7 +14,7 @@ server:
 
 spring:
   application:
-    name: PROVIDER-01
+    name: provider
   redis:
     host: 120.78.73.168
     port: 6379

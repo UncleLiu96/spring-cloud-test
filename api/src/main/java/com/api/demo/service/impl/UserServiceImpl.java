@@ -17,6 +17,7 @@ public class UserServiceImpl implements IUserService {
     @HystrixCommand
     @Override
     public User select(Integer uId) {
+        System.out.println(uId);
         return apiFeign.select(uId);
     }
 
