@@ -1,0 +1,58 @@
+provider:
+  # 名称
+  name: provider
+  # 版本
+  version: 1.0
+  # 版权年份
+  copyrightYear: 2019
+  # 文件上传路径
+  profile: profile/
+  # 获取ip地址开关
+  addressEnabled: true
+server:
+  port: 8081
+
+spring:
+  application:
+    name: PROVIDER-01
+  redis:
+    host: 120.78.73.168
+    port: 6379
+    password: 838061522
+    jedis:
+      pool:
+        max-wait: -1ms #最大建立连接等待时间。如果超过此时间将接到异常。设为-1表示无限制。
+        max-idle: 100  #最大等待连接中的数量,设 0 为没有限制
+        max-active: 300 #最大连接数据库连接数,设 0 为没有限制
+        min-idle: 10 #最小等待连接数
+  #数据库
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: root
+
+# mybatis 配置
+mybatis:
+  config-loca: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+
+
+
+#api配置
+eureka:
+  instance:
+    instance-id: PROVIDER-01
+    prefer-ip-address: true # 访问路径可以显示 IP
+    ip-address: localhost
+    # 续约更新时间间隔（默认30秒）
+    lease-renewal-interval-in-seconds: 1
+    #续约到期时间（默认90秒）
+    lease-expiration-duration-in-seconds: 2
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/  # 注册中心访问地址
+    healthcheck:
+      # 开启健康检查 （需要spring-boot-starter-actuator依赖）
+      enabled: true
