@@ -34,3 +34,9 @@ feign:
       service-test:
         connect-timeout: 10000
         read-timeout: 20000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

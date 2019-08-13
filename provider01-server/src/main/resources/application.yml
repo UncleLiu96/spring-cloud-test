@@ -16,7 +16,7 @@ spring:
   application:
     name: provider
   redis:
-    host: 127.0.0.1
+    host: 120.78.73.168
     port: 6379
     password: 838061522
     jedis:
