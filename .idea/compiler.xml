@@ -15,6 +15,7 @@
         <module name="provider01-server" />
         <module name="provider02" />
         <module name="provider02-server" />
+        <module name="spring-cloud-test" />
         <module name="web" />
       </profile>
     </annotationProcessing>

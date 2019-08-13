@@ -24,6 +24,8 @@ eureka:
       defaultZone: http://localhost:9000/eureka/  # 注册中心访问地址
 
 feign:
+  hystrix:
+    enabled: true #开启服务降级功能
   client:
     config:
       default:

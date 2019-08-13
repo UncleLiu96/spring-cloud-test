@@ -8,13 +8,13 @@ import com.api.demo.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@DefaultProperties(defaultFallback  = "defaultSelect")
+//@DefaultProperties(defaultFallback  = "defaultSelect")
 @Service
 public class UserServiceImpl implements IUserService {
     @Autowired
     private ApiFeign apiFeign;
 
-    @HystrixCommand
+//    @HystrixCommand
     @Override
     public User select(Integer uId) {
         System.out.println(uId);
