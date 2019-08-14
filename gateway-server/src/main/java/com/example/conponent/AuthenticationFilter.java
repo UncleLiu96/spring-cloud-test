@@ -38,7 +38,7 @@ public class AuthenticationFilter extends ZuulFilter {
         RequestContext context = RequestContext.getCurrentContext();
         HttpServletRequest request = context.getRequest();
         String token = request.getParameter("token");
-        // 此处模拟获取数据库或缓存中的 token
+        // 此处模拟获取数据库或缓 存中的 token
         String dbToken = "123456";
         // 此处简单检验 token
         if (token == null || "".equals(token) || !dbToken.equals(token)) {
