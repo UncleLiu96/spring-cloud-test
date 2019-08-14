@@ -12,11 +12,13 @@
         <module name="dashboard" />
         <module name="eureka" />
         <module name="eureka-server" />
+        <module name="gateway-server" />
         <module name="provider01" />
         <module name="provider01-server" />
         <module name="provider02" />
         <module name="provider02-server" />
         <module name="spring-cloud-test" />
+        <module name="user-server" />
         <module name="web" />
       </profile>
     </annotationProcessing>

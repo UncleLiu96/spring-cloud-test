@@ -5,6 +5,8 @@
     <file type="web" url="file://$PROJECT_DIR$/api" />
     <file type="web" url="file://$PROJECT_DIR$/dashboard" />
     <file type="web" url="file://$PROJECT_DIR$/eureka-server" />
+    <file type="web" url="file://$PROJECT_DIR$/gateway-server" />
+    <file type="web" url="file://$PROJECT_DIR$/user-server" />
     <file type="web" url="file://$PROJECT_DIR$/web" />
   </component>
   <component name="JavaScriptSettings">
@@ -20,6 +22,8 @@
         <option value="$PROJECT_DIR$/provider02-server/pom.xml" />
         <option value="$PROJECT_DIR$/common/pom.xml" />
         <option value="$PROJECT_DIR$/dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway-server/pom.xml" />
+        <option value="$PROJECT_DIR$/user-server/pom.xml" />
       </list>
     </option>
   </component>
