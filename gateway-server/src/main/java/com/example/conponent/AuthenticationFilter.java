@@ -24,7 +24,7 @@ public class AuthenticationFilter extends ZuulFilter {
         if (flag) {
             System.out.println("========不执行 zuul 过滤方法=======");
         } else {
-            System.out.println("========执行 zuul 过滤方法=======");
+            System.out.println("========执行 zuul  过滤方法=======");
         }
         return !flag;
     }
