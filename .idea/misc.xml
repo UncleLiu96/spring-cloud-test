@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/api" />
+    <file type="web" url="file://$PROJECT_DIR$/config-server" />
     <file type="web" url="file://$PROJECT_DIR$/dashboard" />
     <file type="web" url="file://$PROJECT_DIR$/eureka-server" />
     <file type="web" url="file://$PROJECT_DIR$/gateway-server" />
@@ -24,6 +25,7 @@
         <option value="$PROJECT_DIR$/dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/gateway-server/pom.xml" />
         <option value="$PROJECT_DIR$/user-server/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
       </list>
     </option>
   </component>

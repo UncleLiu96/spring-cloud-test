@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: api
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG  # config-server 在注册中心的名称
+      profile: dev  # 指定配置文件的环境
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/  # 注册中心访问地

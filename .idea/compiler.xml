@@ -9,6 +9,7 @@
         <module name="api" />
         <module name="cloud_test" />
         <module name="common" />
+        <module name="config-server" />
         <module name="dashboard" />
         <module name="eureka" />
         <module name="eureka-server" />
