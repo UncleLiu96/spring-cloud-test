@@ -2,12 +2,21 @@ spring:
   application:
     name: api
   cloud:
+    bus:
+      enabled: true
+      trace:
+        enabled: true
     config:
       discovery:
         enabled: true
         service-id: CONFIG  # config-server 在注册中心的名称
       profile: dev  # 指定配置文件的环境
+  rabbitmq:
+    host: 120.78.73.168
+    port: 5672
+    username: admin
+    password: 838061522
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:9000/eureka/  # 注册中心访问地
+      defaultZone: http://localhost:9000/eureka/  # 注册中心访问地址
