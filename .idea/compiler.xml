@@ -6,25 +6,42 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="api" />
-        <module name="cloud_test" />
-        <module name="common" />
-        <module name="config-server" />
-        <module name="dashboard" />
-        <module name="eureka" />
-        <module name="eureka-server" />
-        <module name="gateway-server" />
-        <module name="provider01" />
         <module name="provider01-server" />
-        <module name="provider02" />
         <module name="provider02-server" />
-        <module name="spring-cloud-test" />
+        <module name="eureka" />
         <module name="user-server" />
+        <module name="provider01" />
+        <module name="provider02" />
+        <module name="cloud_test" />
+        <module name="eureka-server" />
+        <module name="config-server" />
+        <module name="common" />
         <module name="web" />
+        <module name="demo (2) (com.example)" />
+        <module name="spring-cloud-test" />
+        <module name="gateway-server" />
+        <module name="api" />
+        <module name="config" />
+        <module name="user" />
+        <module name="dashboard" />
+        <module name="demo (1) (com.dashboard)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo (5) (com.web)" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="config" options="-parameters" />
+      <module name="demo (1) (com.dashboard)" options="-parameters" />
+      <module name="demo (2) (com.example)" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="provider01" options="-parameters" />
+      <module name="provider02" options="-parameters" />
+      <module name="user" options="-parameters" />
+    </option>
   </component>
 </project>
